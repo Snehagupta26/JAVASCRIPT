@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JS can change HTML content</h2>
+    <p id="demo" >we used getelementbyid which finds html element by id and change to innethtml .</p>
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'hi sneha' ">click me</button>
+//it accept both double and single quotes.
+<h2>JS can change HTML attribute values</h2>
+
+<button type = "button" onclick = "document.getelementbyId('myimage').src = 'picon.gif'">turn on light</button>
+<img id="myimage" src ="pico.gif" style = "width: 100px">
+<button type = "button" onclick = "document.getelementbyId('myimage').src = 'picoff.gif'">turn off light</button>
+
+<h3>JS can change HTML styles</h3>
+<p id = "desk">Hello my font is going to be changed</p>
+
+<button type = "button" onclick = "document.getElementById('desk').style.fontSize = '45px'">click me </button>
+
+<h2>js can hide html elements</h2>
+<p id = "qw">i m going to be hidden now</p>
+<button type = "button" onclick = "document.getElementById('qw').style.display = 'none'">click me</button>
+<h2>html can show html elements</h2>
+<p id="qwe" style = "display:none">hello girl</p>
+<button type="button" onclick = "document.getElementById('qwe').style.display = 'block'">click here</button>
+</body>
+</html>

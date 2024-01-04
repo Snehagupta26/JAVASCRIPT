@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myf(){
+        document.getElementById("demo").innerHTML = "hi sneha";
+    }
+    </script>
+    
+
+</head>
+<body>
+    <h2>js is inserted between script tag</h2>
+    <p id ="demos"></p>
+    <script>
+        document.getElementById("demos").innerHTML = "this is js";
+    </script>
+    <p>js function is block of js code that can be exceuted when called for. it can be executed like when user click button</p>
+
+    <p id = "demo">calling function decalred in head : </p>
+    <button type = "button" onclick= "myf()">try me</button>
+     
+    <p id = "demo2">calling function decalred in body</p>
+    <button type = "button" onclick = "myt()">try me</button>
+
+    <script>
+        function myt(){
+            document.getElementById('demo2').innerHTML = "hi gupta";
+        }
+    </script>
+
+    <p>using external js now</p>
+    <p id ="ww">hi</p>
+    
+    <button type ="button" onclick ="myq()"> try</button>
+    <script src="main2.js"></script>
+    <p>
+        An external script can be referenced in 3 different ways:
+
+With a full URL (a full web address)
+With a file path (like /js/)
+Without any path
+<script src="https://www.w3schools.com/js/myScript.js"></script>
+<script src="/js/myScript.js"></script>
+<script src="myScript.js"></script>
+    </p>
+</body>
+</html>
