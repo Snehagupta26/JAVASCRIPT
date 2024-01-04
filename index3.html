@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>JavaScript can "display" data in different ways:<br>
+
+        Writing into an HTML element, using innerHTML.<br>
+        Writing into the HTML output using document.write().<br>
+        Writing into an alert box, using window.alert().<br>
+        Writing into the browser console, using console.log()</p>
+<h2>using innerhtml</h2>
+<p id = "demo"></p>
+<script>
+    document.getElementById("demo").innerHTML = "MY DOC";
+</script>
+<h2>using document.write</h2>
+
+<p id = "demo2"></p>
+<script>
+    document.write("hi sneha");
+</script>
+
+<p>note: never load document.write after entire page vrna sab chla jayega like button se mt kriyo</p>
+
+<h2>using alert</h2>
+<p id = "demo3"></p>
+<script>
+    alert("hola");
+
+</script>
+<button type ="button" onclick = 'alert("haha")'>try me</button>
+
+<h2>using console.log</h2>
+<script>
+    console.log(sneha);
+</script>
+<h2>window.print()</h2>
+<p>JavaScript does not have any print object or print methods.<br>The only exception is that you can call the window.print() method in the browser to print the content of the current window.</p>
+<button onclick="window.print()">Print this page</button>
+</body>
+</html>
