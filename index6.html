@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JAVASCRIPT FUNCTIONS</h1>
+    <p><b>function are defined by funtion keyword</b></p>
+    <p id = "demo"></p>
+    <script>
+        let x = myfun(4,3);
+        document.getElementById("demo").innerHTML = x;
+
+        function myfun(a,b){
+            return a*b;
+        }
+
+    </script>
+    <p><b>A JavaScript function can also be defined using an expression.</b></p>
+    <p id = "demo1"></p>
+    <p id = "demo2"></p>
+    <script>
+        const x1 = function(a,b){return a + b};//anonymous function i.e function without a name.
+        //Functions stored in variables do not need function names. They are always invoked (called) using the variable name.
+
+//The function above ends with a semicolon because it is a part of an executable statement.
+        document.getElementById("demo1").innerHTML = x1;
+        document.getElementById("demo2").innerHTML = x1(2,3);
+    </script>
+    <h2>function constructor : js provide Function() which is built in to declare</h2>
+    <p id = "dem"></p>
+    <p id = "de"></p>
+    <script>
+        const x4 = new Function("a","b","return a*b");
+        document.getElementById("dem").innerHTML = x4;
+        document.getElementById("de").innerHTML = x4(4,6);
+    </script>
+
+    <h2>function hoisting- move **declaration** to top of current scope .....mtlb bta pehle diya ki ye 5 nikal aur vo kaise niakala vo baad mae </h2>
+     <p id = "hi"></p>
+     <script>
+         ele = document.getElementById("hi");
+        ele.innerHTML = myfu(5) ;
+        function myfu(y){
+            return y*y;
+        }
+       
+     </script>
+
+     <h2>self invoking functions</h2>
+     
+</body>
+</html>

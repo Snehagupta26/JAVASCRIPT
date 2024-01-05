@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>js variables</h2>
+
+    <p> variable in 4 ways : let var const automatic</p>
+
+    <h2>automatic</h2>
+<p id = "demo"></p>
+    <script>
+         x = 5;
+         y = 4;
+         z = x*y;
+         document.getElementById("demo").innerHTML = z;
+    </script>
+    <h2>by let</h2>
+    <p id = "demo1"></p>
+    <script>
+        let x1 = 5;
+        let y1 = 4;
+        let z1 = x1*y1;
+         document.getElementById("demo1").innerHTML = z1;
+    </script>
+    <h2>by var</h2>
+    <p id = "demo2"></p>
+    <script>
+        var x2 = 5;
+        var y2 = 4;
+        var z2 = x2*y2;
+         document.getElementById("demo2").innerHTML = z2;
+         
+    </script> 
+    <h2>
+        by const
+    </h2>
+    <p id = "demo3"></p>
+    <script>
+        const x3 = 5;
+        const y3 = 4;
+        const z3 = x3*y3;
+         document.getElementById("demo3").innerHTML = z3;
+         
+    </script> 
+    <p><b>var keyword only for code for old browsers</b></p>
+    <h2>mixed example</h2>
+    <p id ="qw"></p>
+    <script>
+        const item1 = 2;
+        const item2 = 1;
+        var total = item1 + item2;
+        document.getElementById("qw").innerHTML ="total is : " + total; 
+    </script>
+    <p>always decalre variables.<br>use const of value cant be changed<br>use let if u cant use const.<br>A variable declared without a value will have the value undefined.<br>If you re-declare a JavaScript variable declared with var, it will not lose its value.<br>ou cannot re-declare a variable declared with let or const.</p>
+<h2>concatenation</h2>
+<p id = "demo0"></p>
+<p id = "demo00"></p>
+<script>
+    document.getElementById("demo0").innerHTML = 2+3+ "5";
+    document.getElementById("demo00").innerHTML = "5"+2+3;
+</script>
+</body>
+</html>
