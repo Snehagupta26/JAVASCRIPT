@@ -65,6 +65,7 @@
      <p id = "hn"></p>
      <p id = "kl"></p>
      <p id = "ml"></p>
+     <p id = "lk"></p>
      <script>
         function myfuns(x){
             return x * x;
@@ -86,7 +87,27 @@
         document.getElementById("ml").innerHTML = sd();//return 0
         document.write(typeof(result));
         document.getElementById("hn").innerHTML = typeof(result);//ye last mae jara hai....kuch bhi krlo
-     </script>
+        function myFunction(a, b) {
+  return a * b;
+}
+
+let text = myFunction.toString();
+ document.getElementById("lk").innerHTML = text;
+//  A function defined as the property of an object, is called a method to the object.
+// A function designed to create new objects, is called an object constructor.
+   
+   
+   </script>
+   <h1>ARROW FUNCTIONS</h1>
+   <p><b>Arrow functions allows a short syntax for writing function expressions.<br>
+
+    You don't need the function keyword, the return keyword, and the curly brackets.</b></p>
+    <p id="demo9"></p>
+
+<script>
+const x9 = (x9, y9) => { return x9 * y9 };
+document.getElementById("demo9").innerHTML = x9(5, 5);
+</script>
 
 </body>
 </html>
