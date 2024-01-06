@@ -50,6 +50,43 @@
      </script>
 
      <h2>self invoking functions</h2>
-     
+     <p id = "qwerty"></p>
+     <script>
+        (function(){
+            document.getElementById("qwerty").innerHTML = "hello";
+        })()
+       /*anonymous self invoking function.You cannot self-invoke a function declaration.We invoke function declaration*/
+     </script>
+     <h2>function can be used as values and EXPRESSIONS</h2>
+     <p id = "mk"></p>
+     <p id = "ns"></p>
+     <p id = "pp"></p>
+     <p id = "nh"></p>
+     <p id = "hn"></p>
+     <p id = "kl"></p>
+     <p id = "ml"></p>
+     <script>
+        function myfuns(x){
+            return x * x;
+        }
+        function myfuns1(){
+            
+        }
+        document.getElementById("mk").innerHTML = "value is : " + myfuns(2);
+        document.getElementById("ns").innerHTML = "value is : " + myfuns(2)*2;
+        document.getElementById("pp").innerHTML = typeof(myfuns());
+        document.getElementById("pp").innerHTML = typeof(myfuns1());
+        var result = typeof myfuns1;
+       
+
+        function sd(a,b,c){
+            return arguments.length;
+        }
+        document.getElementById("kl").innerHTML = sd(1,2,3);//return 3
+        document.getElementById("ml").innerHTML = sd();//return 0
+        document.write(typeof(result));
+        document.getElementById("hn").innerHTML = typeof(result);//ye last mae jara hai....kuch bhi krlo
+     </script>
+
 </body>
 </html>
