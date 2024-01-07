@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS FUNCTION PARAMETERS</h1>
+    <p>function functionName(parameter1, parameter2, parameter3) {
+        // code to be executed
+      }
+      Function parameters are the names listed in the function definition.
+      
+      Function arguments are the real values passed to (and received by) the function.</p>
+      <h2>default parameters</h2>
+      <p id ="demo"></p>
+      <script>
+        function myf(x,y){
+            if (y == undefined){
+                y = 2;
+            }
+            return x*y;
+        }
+        document.getElementById("demo").innerHTML = myf(3);
+      </script>   
+       <p id ="demo1"></p>
+       <script>
+         function myf1(x1,y1){
+            //  if (y1 == undefined){
+            //      y1 = 2;
+            //  }
+             return x1*y1;
+         }
+         document.getElementById("demo1").innerHTML = myf1(3);
+       </script>      
+       <p id ="demo2"></p>
+       <script>
+         function myf2(x2 , y2 = 10){
+            //  if (y1 == undefined){
+            //      y1 = 2;
+            //  }
+             return x2*y2;
+         }
+         document.getElementById("demo2").innerHTML = myf2(3);
+       </script>   
+
+<h2>function rest parameter</h2>
+
+
+
+</body>
+</html>
