@@ -45,9 +45,35 @@
          document.getElementById("demo2").innerHTML = myf2(3);
        </script>   
 
+
+
 <h2>function rest parameter</h2>
+<p id = "po"></p>
+<script>
+   /*wrong*/ function sum(...args){
+        let sum = 0;
+        for (let arg in args) sum += arg;
+        return sum;
+    }
+    let x7 = sum(5,6);
+    document.getElementById("po").innerHTML = x7;
+</script>
+<p id="demoh"></p>
 
+<script>
+function sum(...args) {
+ //right
+  let sum = 0;
+  for (let arg of args) sum += arg;
+  return sum;
+}
 
+let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
 
+document.getElementById("demoh").innerHTML = x;
+</script>
 </body>
 </html>
+arguments in function
+function pass by values
+function pass by reference
