@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript promises</h1>
+    <p>producing code jo time leta hai . consuming code jisko wait krna hota hai</p>
+    <!--promise object-->
+    <script>
+    // let myPromise = new Promise(function(myResolve,myReject){
+    //     //producing code
+
+    //     myResolve();//when successful
+    //     myReject();//when error
+    // });
+
+    // //consuming code
+    // myPromise.then(
+    //     function(value){//code if successful}
+    //     function(error){//code if error}
+    // );
+    // //The Promise object supports two properties: state and result.
+    // myPromise.state - myPromise.result
+    // "pending"-undefined
+    // "fulfilled"-a result value
+    // "rejected"-an error object
+</script>
+<p id = "demo"></p>
+<script>
+    function display(some){
+        document.getElementById("demo").innerHTML = some;
+    }
+    let myPromise = new Promise(function(myResolve,myReject){
+        let x = 6;
+        if(x==0){
+            myResolve("ok");
+        }else{
+            myReject("error");
+        }
+    });
+    myPromise.then(
+        function(value){
+            display(value);
+        },
+        function(error){
+            display(error);
+        }
+    );
+</script>
+<!--eg of timeout and file-->
+
+</body>
+</html>
