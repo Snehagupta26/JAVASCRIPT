@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS CALLBACKS</h1>
+    <p><b>callback is a fun passed as an argument to another fun.this allow a fun to call another fun.A callback function can run after another function has finished</b></p>
+    <h2>funtion sequence</h2>
+    <p>JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined.</p>
+    <p id = "demo"></p>
+    <script>
+        function display(some){
+            document.getElementById("demo").innerHTML = some;
+            
+        }
+        function f1(){
+            display("hi");
+        }
+        function f2(){
+            display("bye");
+        }
+        f1();
+        f2();
+        
+    </script>
+    <h1>sequence control</h1>
+    <p>Sometimes you would like to have better control over when to execute a function.</p>
+    <p id = "demo2"></p>
+    <script>
+        function display(some){
+            document.getElementById("demo2").innerHTML = some;
+        }
+        function sum( a , b){
+            //display(a+b);
+            return a+b;
+        }
+        //sum(2,3);
+        let abc = sum(2,3);
+        display(abc);
+    </script>
+    <h1>js callbacks</h1>
+    <p id = "demo3"></p>
+    <script>
+        function display(some){
+            document.getElementById("demo3").innerHTML = some;
+        }
+        function multiply(a,b,mycall){
+            let c = a*b;
+            mycall(c);
+
+        }
+        multiply(5,4,display);//right
+        multiply(5,4,display());//wrong
+    </script>
+</body>
+</html>

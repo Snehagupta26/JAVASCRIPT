@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>asynchronous js</h1>
+    <p><b>Functions running in parallel with other functions are called asynchronous</b></p>
+    <h4>using timeout()</h4>
+    <p id = "demo"></p>
+    <script>
+       setTimeout(myf,3000);
+       function myf(){
+        document.getElementById("demo").innerHTML = "I LOVE YOU  ";
+       }
+    </script>
+    <p id = "demo1"></p>
+    <script>
+        setTimeout(function() {myf("Gitika ");},3000);
+       function myf(value){
+        document.getElementById("demo1").innerHTML = value;
+       }
+    </script>
+    <h1>setinterval</h1>
+    <p>When using the JavaScript function setInterval(), you can specify a callback function to be executed for each interval</p>
+    <p id = "demo4"></p>
+    <script>
+        setInterval(myfun,1000);
+        function myfun(){
+            let d = new Date();
+            document.getElementById("demo4").innerHTML = "current time is : " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+        }
+    </script>
+</body>
+</html>
