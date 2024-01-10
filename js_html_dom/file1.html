@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>with html dom js can access and change all elements of html doc</b></p>
+    <p><b>get element by id method</b></p>
+    <p id = "demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "hi sg";
+    </script>
+    <p><b>get element by tag name</p>
+    <p><b>finding html element by tag name</p>
+    <p id = "qw"></p>
+    <script>
+        const ele = document.getElementsByTagName("p");
+        //ele[0].innerHTML;
+        document.getElementById("qw").innerHTML = ele[0].innerHTML +"-----"+ele[1].innerHTML;
+    </script>
+    <p><b>get element by class names</p>
+        <p class = "in">hi</p>
+
+        <p id = "po"></p>
+        <script>
+            const y = document.getElementsByClassName("in");
+            document.getElementById("po").innerHTML = y[0].innerHTML + "....."+ y[1].innerHTML;
+        </script>
+        <p><b>Changing the Value of an Attribute</b></p>
+</body>
+</html>
