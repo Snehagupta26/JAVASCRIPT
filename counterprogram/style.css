@@ -1,0 +1,22 @@
+#num{
+    text-align: center;
+    display: block;
+    font-size: 10em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#btncontainer{
+    text-align: center;
+}
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color:white;
+    background-color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+.buttons:hover{
+    background-color: rgba(12, 12, 107, 0.288);
+}
