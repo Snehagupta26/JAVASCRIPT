@@ -54,3 +54,27 @@ try{
 }catch(error){
     console.error(error);
 }
+
+try{
+    console.log(x);
+}catch(error){
+    console.error(error);
+}finally{
+    console.log("this always run");
+}
+console.log("done");
+try{
+    const dividend = Number(window.prompt("enter num : "));
+    const divisor = Number(window.prompt("enter num : "));
+
+    if(divisor == 0){
+        throw new Error("cant divide by 0");
+    }
+    if(isNaN(dividend) || isNaN(divisor)){
+        throw new Error("should be a num");
+    }
+    const result = divident/divisor;
+    console.log(result);
+}catch(error){
+    console.error(error);
+}
